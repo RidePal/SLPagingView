@@ -32,6 +32,7 @@ typedef void(^SLPagingViewDidChanged)(NSInteger currentPage);
 * The view containing the nav bar menu selection views
 */
 @property (nonatomic, strong) UIView *navigationBarView;
+@property IBOutlet UIView *navContainerView;
 
 /*
  *  Delegate: Called when the user scroll horizontally

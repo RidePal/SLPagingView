@@ -183,7 +183,10 @@
     [self notifyControllers:NSSelectorFromString(@"viewDidAppear:")
                      object:@(animated)
                  checkIndex:YES];
-    [self.navigationController.navigationBar addSubview:self.navigationBarView];
+    //[self.navigationController.navigationBar addSubview:self.navigationBarView];
+    [self.view bringSubviewToFront:self.navContainerView];
+    [self.navContainerView addSubview:self.navigationBarView];
+
 }
 
 -(void)viewDidAppear:(BOOL)animated{
